@@ -1,17 +1,16 @@
-
 #include <stdio.h>
 
 int main (){
-    /*Kamus*/
+    //kamus
     long n, sum, satuan;
-    
     scanf ("%ld", &n);
+    //add num n
     while (n != 0){
         satuan = n % 10;
         sum  += satuan;
         n /= 10;
     } 
-
+    //add num of sum if sum still 2 digits
     while (sum > 9){
         n = sum;
         sum = 0;
